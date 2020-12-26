@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lin"
+
+    tools:context=".MainActivity">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+
+        android:id="@+id/p"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/ppp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/p" />
+<ProgressBar
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@id/hor"
+android:id="@+id/ppp"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="parent"
+
+    app:layout_constraintEnd_toEndOf="parent"/>
+<HorizontalScrollView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/hor"
+
+    app:layout_constraintBottom_toBottomOf="parent"
+
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hr"
+        android:background="#FAD7D7"
+
+        android:orientation="horizontal">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business"
+            android:checked="true"
+            android:textColor="#ffffff"
+            app:chipBackgroundColor="#FF0000"
+           app:chipIconSize="20dp"
+            app:chipIcon="@drawable/business"
+            android:layout_marginRight="6dp"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entertainment"
+            app:chipBackgroundColor="#ffffff"
+            app:chipIconSize="20dp"
+            app:chipIcon="@drawable/entertainment"
+            android:layout_marginRight="6dp"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General"
+            app:chipBackgroundColor="#ffffff"
+            app:chipIconSize="20dp"
+            app:chipIcon="@drawable/general"
+            android:layout_marginRight="6dp"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health"
+            app:chipIconSize="20dp"
+            app:chipBackgroundColor="#ffffff"
+            app:chipIcon="@drawable/health"
+            android:layout_marginRight="6dp"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Science"
+            app:chipBackgroundColor="#ffffff"
+            app:chipIcon="@drawable/science"
+            app:chipIconSize="20dp"
+            android:layout_marginRight="6dp"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sports"
+            app:chipIconSize="20dp"
+            app:chipBackgroundColor="#ffffff"
+            app:chipIcon="@drawable/sportss"
+            android:layout_marginRight="6dp"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technology"
+            app:chipBackgroundColor="#ffffff"
+            app:chipIconSize="20dp"
+            app:chipIcon="@drawable/computer"
+            />
+
+    </LinearLayout>
+</HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
